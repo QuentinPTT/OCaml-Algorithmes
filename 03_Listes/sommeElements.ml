@@ -1,5 +1,5 @@
-(* Somme des ŽlŽments d'une liste *)
+(* Somme des Ã©lÃ©ments d'une liste *)
 
 let rec somme l = match l with
-		[] -> 0
-		|t::q -> t + somme q;;
+	[] -> 0
+	|t::q -> t + somme q;;
