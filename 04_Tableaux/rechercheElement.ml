@@ -22,7 +22,7 @@ let present tab x =
 		incr k;
 	done;!res;;
 
-(* C - Algorithme rŽcursif *)
+(* C - Algorithme récursif *)
 
 let present2 tab x =
 	let n = Array.length tab in
@@ -32,7 +32,7 @@ let present2 tab x =
 		|_ -> ch(k+1)
 	in ch 0;;
 
-(* D - Tableau triŽ *)
+(* D - Avec le tableau trié *)
 
 let cherchetriee tab a =
 	let k = ref 0 in
