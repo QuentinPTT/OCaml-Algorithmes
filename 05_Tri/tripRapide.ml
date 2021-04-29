@@ -3,17 +3,17 @@
 (* A - Version Tableau *)
 
 let echange t i j=let a=t.(i) in 
-   t.(i)<-t.(j); t.(j)<-a;;
+	t.(i)<-t.(j); t.(j)<-a;;
 
 let partition t a b=
-   let p=t.(a) in let c=ref a and f=ref b in
-       while !c< !f do match t.(!c+1)<p with
-           true -> echange t !c (!c+1);
-                   incr c
-          |_ -> echange t (!c+1) !f;
-                 decr f
+	let p=t.(a) in let c=ref a and f=ref b in
+	while !c< !f do match t.(!c+1)<p with
+		true -> echange t !c (!c+1);
+                	incr c
+          	|_ -> echange t (!c+1) !f;
+                	decr f
         done;
-			!c;;
+	!c;;
 
 let triRap t=let n=Array.length t in 
     let rec triRec a b= if a<b then
